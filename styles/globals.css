@@ -12,5 +12,28 @@ a {
 }
 
 * {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
+}
+
+.container {
+  scroll-snap-type: y mandatory;
+overflow-y: scroll;
+height: 100vh;
+}
+
+section {
+height: 100vh;
+scroll-snap-align: start;
+}
+
+.one {
+background: rgb(36, 164,138);
+}
+.two {
+background: rgb(211, 79,79);
+}
+.three {
+background: rgb(67, 91,175);
 }
