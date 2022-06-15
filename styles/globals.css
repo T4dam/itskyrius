@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
@@ -17,10 +21,12 @@ a {
   box-sizing: border-box;
 }
 
-.container {
+.custom-container {
   scroll-snap-type: y mandatory;
 overflow-y: scroll;
 height: 100vh;
+  width: 100vw;
+  /* scroll-padding: 100px; */
 }
 
 section {

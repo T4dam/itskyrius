@@ -1,17 +1,11 @@
 import Head from 'next/head'
 // import Image from 'next/image'
 // import styles from '../styles/Home.module.css'
-import styled from 'styled-components'
-
-const Container = styled.div`
-scroll-snap-type: y mandatory;
-overflow-y: scroll;
-height: 100vh;
-`
-const Section = styled.section`
-height: 100vh;
-scroll-snap-align: start;
-`
+import Navbar from '../components/navbar/navbar'
+import Contact from '../components/sections/contact'
+import Hero from '../components/sections/hero'
+import Services from '../components/sections/services'
+import Contacts from '../components/sections/contact'
 export default function Home() {
   return (
     <div>
@@ -22,16 +16,13 @@ export default function Home() {
       </Head>
 
       <main>
-        <div className='container'>
-            <section className='one section'>
-              <h1>first</h1>
-            </section>
-            <section className='two section'>
-              <h1>two</h1>
-            </section>
-            <section className='three section'>
-              <h1>three</h1>
-            </section>
+        <div className='custom-container'>
+              <Navbar />
+              <Hero />
+              <Services />
+              <Contact />
+              
+           
         </div>
       </main>
 {/* 
