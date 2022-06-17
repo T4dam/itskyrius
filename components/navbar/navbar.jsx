@@ -3,6 +3,7 @@ import Link from 'next/link';
 // import Screendrop from './screendrop';
 import { useState } from 'react';
 // import Image from 'next/image';
+import { motion } from 'framer-motion'
 
 const Navbar = () => {
     // const [ open, setOpen ]= useState(false)
@@ -34,7 +35,7 @@ const Navbar = () => {
    
   return (
       
-    <header className='z-50  shadow-xl text-white h-14 flex items-center sticky top-0'>
+    <motion.header initial={{y:-100}} animate={{y:0, transition:{duration: 1.2, ease: 'easeOut'}}}className='  shadow-xl text-white h-14 flex items-center sticky top-0'>
         <nav className='flex items-center mx-auto justify-between container px-6'>
             <div className='flex items-center gap-1 w-32'>
                 <Link href={'/'}>
@@ -75,7 +76,7 @@ const Navbar = () => {
             
             </div>
         </nav>
-    </header>
+    </motion.header>
   )
 }
 

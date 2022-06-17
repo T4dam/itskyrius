@@ -6,6 +6,8 @@ import Contact from '../components/sections/contact'
 import Hero from '../components/sections/hero'
 import Services from '../components/sections/services'
 import Contacts from '../components/sections/contact'
+import { motion } from 'framer-motion'
+
 export default function Home() {
   return (
     <div>
@@ -17,7 +19,9 @@ export default function Home() {
 
       <main>
         <div className='custom-container'>
+        
               <Navbar />
+      
               <Hero />
               <Services />
               <Contact />

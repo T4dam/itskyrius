@@ -8,7 +8,7 @@ const bigBoxVariants = {
     visible: {
         x: 0,
         transition: {
-            delay: 0.5,
+            delay: 0.8,
             
             when: "beforeChildren",
             ease: 'easeOut',
@@ -56,6 +56,7 @@ const Box = () => {
        variants={listVariants}
        ><h1>Išamnūs it sprendimai < br/>tiesiai į Jūsų namus</h1></motion.li>
 <motion.li 
+
        className='mb-20'
        variants={listVariants}
        > <h3 className='mb-6'>Kvieciame užsirašyti konsultacijai apie jums rūpimus sprendimus <br/> Kvieciame užsirašyti konsultacijai apie jums rūpimus sprendimus</h3>
